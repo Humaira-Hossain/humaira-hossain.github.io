@@ -828,6 +828,11 @@ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' hei
   border: 2px solid #222222;
 }
 
+.cfg {
+  list-style-type: none;
+  padding-bottom: 37px;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
