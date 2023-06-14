@@ -108,8 +108,39 @@
                 <i class="bx bx-tachometer"></i>
               </div>
               <h4><a href="">Project 3</a></h4>
-              <p>Journaling / Playlist Generator app. Group project at the end of the CFG degree. Uses 2 external APIs,
-                has a SQL database and a simple and clean interface. Demo coming soon! </p>
+              <p>
+                Journaling / Playlist Generator app. Group project at the end of the CFG degree. Uses 2 external APIs,
+                has a SQL database and a simple and clean interface.
+                <a href="#" id="openModal">
+                  Watch demo here!
+                  <span class="play-icon"></span>
+                </a>
+              </p>
+                <div id="videoModal" class="modal">
+                  <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe width="100%" height="315" src="https://www.loom.com/embed/6f6ab033d05d4357b9cfedfff9f4ba8c" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <script>
+                var openModal = document.getElementById("openModal");
+                var videoModal = document.getElementById("videoModal");
+                var closeBtn = document.getElementsByClassName("close")[0];
+
+                openModal.addEventListener("click", function() {
+                  videoModal.style.display = "block";
+                });
+
+                closeBtn.addEventListener("click", function() {
+                  videoModal.style.display = "none";
+                });
+
+                window.addEventListener("click", function(event) {
+                  if (event.target == videoModal) {
+                    videoModal.style.display = "none";
+                  }
+                });
+              </script>
             </div>
           </div>
 
